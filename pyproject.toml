@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "computational-intelligence-2022"
+version = "0.1.0"
+description = ""
+authors = ["gabrjc <gabrjc@gmail.com>"]
+readme = "README.md"
+packages = [{include = "computational_intelligence_2022"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
