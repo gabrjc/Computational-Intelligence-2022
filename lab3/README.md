@@ -1,6 +1,6 @@
 # Computational-Intelligence-2022
 
-## Lab2
+## Lab3
 
 #### Made in cooperation with Jacopo Taramasso, S292634
 
@@ -33,8 +33,27 @@ In general the algorithm is better than both pure_random and the professor's str
 
 Unfortunately the algorithm fails to win against the optimal strategy based on nim-sum but this was expected.
 
-## possible future improvements
+### possible future improvements
 
 To improve the algorithm it is possible to add other policies both for the selection of the column and the number of elements.
 
 These improvements would be effective if you get a list of policies such as to obtain a version parallel to the nim-sum that allows you to always obtain safe states.
+
+
+# Task3.3: An agent using minmax
+
+The minmax algorithm has been applied to the problem, the value of each node depends on the nimsum of the child nodes. 
+A +1 is then awarded for each safe state in the node's descendants,
+the choice of move is therefore made so that the opponent has the least number of safe states in the future.
+
+The evaluations were carried out on a few games due to the large amount of computation involved.
+Minmax always beats pure random and professor strategy. it loses to nimsum-based optimal strategy.
+
+
+### possible future improvements
+
+It would be necessary to add some pruning to make the computation lighter and to have the possibility to evaluate deeper trees
+
+
+
+
