@@ -33,7 +33,7 @@ In general the algorithm is better than both pure_random and the professor's str
 
 Unfortunately the algorithm fails to win against the optimal strategy based on nim-sum but this was expected.
 
-### possible future improvements <hr style="border:1px solid gray">
+### possible future improvements <hr style="border:0.5px solid gray">
 
 To improve the algorithm it is possible to add other policies both for the selection of the column and the number of elements.<br/>
 These improvements would be effective if you get a list of policies such as to obtain a version parallel to the nim-sum that allows you to always obtain safe states.
