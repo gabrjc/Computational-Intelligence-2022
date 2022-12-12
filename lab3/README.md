@@ -36,7 +36,6 @@ Unfortunately the algorithm fails to win against the optimal strategy based on n
 <br/>
 
 ## Possible future improvements 
-#
 To improve the algorithm it is possible to add other policies both for the selection of the column and the number of elements.<br/>
 These improvements would be effective if you get a list of policies such as to obtain a version parallel to the nim-sum that allows you to always obtain safe states.
 
@@ -55,7 +54,6 @@ Minmax always beats pure random and professor strategy. it loses to nimsum-based
 <br/>
 
 ## Possible future improvements
-#
 It would be necessary to add some pruning to make the computation lighter and to have the possibility to evaluate deeper trees
 
 <br/><br/>
@@ -77,7 +75,6 @@ The second strategy is taken indeed from the Maze project given from the profess
 <br/>
 
 ## Possible future improvements
-#
 Surely the most evident problem is the lackness of a big number of training trials, the two models have been resulted very sensitive to changing the hyperparameter like alpha and random_factor. Increasing the NIM_SIZE value, computational time explodes!
 
 
