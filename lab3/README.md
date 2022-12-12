@@ -33,7 +33,6 @@ In general the algorithm is better than both pure_random and the professor's str
 
 Unfortunately the algorithm fails to win against the optimal strategy based on nim-sum but this was expected.
 
-## Possible future improvements
 ### possible future improvements
 
 To improve the algorithm it is possible to add other policies both for the selection of the column and the number of elements.
@@ -56,6 +55,26 @@ Minmax always beats pure random and professor strategy. it loses to nimsum-based
 
 It would be necessary to add some pruning to make the computation lighter and to have the possibility to evaluate deeper trees
 
+
+
+# Task3.4: An agent using Reinforcement Learning
+The idea of the first strategy has been taken from [wikipedia](https://en.wikipedia.org/wiki/Q-learning) and from this [repo](https://github.com/jakob-manning/nim-bot), using Q-Learning, a model-free reinforcement learning algorithm. 
+For any finite Markov decision process (FMDP), Q-learning finds an optimal policy in the sense of maximizing the expected value of the total reward over any and all successive steps, starting from the current state.
+Q-learning can identify an optimal action-selection policy for any given FMDP
+
+A dictionary Q is iniazilized to maps the tuple (state, action) to q-values (numbers); the q-learning model updates itself receiving the old state, the action referred to that state, the new resulting state and the reward linked to the action taken. 
+Nim game is trained against itself for a given number of matches to return the reinforced agent we wanted.
+
+The Q-value used (taken from wikipedia):
+<br>Q (state,action) = previous Q value + alpha_learning_rate * (new value estimate - olq Q value)
+( with new value estimate that is the current reward + the future reward estimation )
+
+The second strategy is taken indeed from the Maze project given from the professors, Nim games has been adapted to work with the Maze functions. In particular we had to convert the rows to tuples <code>(tuple(state._rows)</code>, and adapt the exploitation of the cook function from the previous tasks. 
+
+
+
+### possible future improvements
+Surely the most evident problem is the lackness of a big number of training trials, the two models have been resulted very sensitive to changing the hyperparameter like alpha and random_factor. Increasing the NIM_SIZE value, computational time explodes!
 
 
 
