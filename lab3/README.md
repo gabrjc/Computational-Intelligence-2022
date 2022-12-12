@@ -50,7 +50,8 @@ The evaluations were carried out on a few games due to the large amount of compu
 Minmax always beats pure random and professor strategy. it loses to nimsum-based optimal strategy.
 
 
-### Possible future improvements<hr />
+### Possible future improvements
+#
 It would be necessary to add some pruning to make the computation lighter and to have the possibility to evaluate deeper trees
 
 
