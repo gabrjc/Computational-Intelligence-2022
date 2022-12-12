@@ -20,6 +20,7 @@ It has resulted in some cases how strongly the outcome depends on the first move
     Pure_random vs evolve_strategy(p=0.5) => 0.48
     Pure_random vs evolve_strategy(p=0.9) => 0.48
 
+<br/><br/>
 
 # Task3.2: An agent using evolved rules
 
@@ -32,13 +33,15 @@ The performance of the algorithm varies according to the parameters: increasing 
 In general the algorithm is better than both pure_random and the professor's strategy, with a further increase if the "last condition" policy is used.
 
 Unfortunately the algorithm fails to win against the optimal strategy based on nim-sum but this was expected.
+<br/>
 
-### possible future improvements 
+### Possible future improvements 
 #
 To improve the algorithm it is possible to add other policies both for the selection of the column and the number of elements.<br/>
 These improvements would be effective if you get a list of policies such as to obtain a version parallel to the nim-sum that allows you to always obtain safe states.
 
 
+<br/><br/>
 
 # Task3.3: An agent using minmax
 
@@ -49,12 +52,13 @@ the choice of move is therefore made so that the opponent has the least number o
 The evaluations were carried out on a few games due to the large amount of computation involved.
 Minmax always beats pure random and professor strategy. it loses to nimsum-based optimal strategy.
 
+<br/>
 
 ### Possible future improvements
 #
 It would be necessary to add some pruning to make the computation lighter and to have the possibility to evaluate deeper trees
 
-
+<br/><br/>
 
 # Task3.4: An agent using Reinforcement Learning
 The idea of the first strategy has been taken from [wikipedia](https://en.wikipedia.org/wiki/Q-learning) and from this [repo](https://github.com/jakob-manning/nim-bot), using Q-Learning, a model-free reinforcement learning algorithm. 
@@ -70,7 +74,7 @@ The Q-value used (taken from wikipedia):
 
 The second strategy is taken indeed from the Maze project given from the professors, Nim games has been adapted to work with the Maze functions. In particular we had to convert the rows to tuples <code>(tuple(state._rows)</code>, and adapt the exploitation of the cook function from the previous tasks. 
 
-
+<br/>
 
 ### Possible future improvements
 #
