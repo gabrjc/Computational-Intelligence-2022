@@ -6,7 +6,7 @@
 
 ## Algorithms
 
-We used an A* search in two different versions:
+We used an advanced greedy algorithm in two different versions:
 
 the first one use the ratio between new number discovered and the lenght of new list to perform the optimal choice;
 
@@ -16,11 +16,4 @@ the second one use the ratio between new number discovered and the interesction 
 ## Performances
 
 Both algorithm have better beformance than Gready algorithm.
-
 The second one perform better with larger N but is more time expensive.
-
-<<<<<<< HEAD
-The first one perform similar to the second one in a lot of cases but is cheaper at the computational level.
-=======
-The first one perform similar to the second one in a lot of cases but is cheaper at the computational level.
->>>>>>> b3a30bf9316a8a29abaa12b45d1dca3ddc9cef28
